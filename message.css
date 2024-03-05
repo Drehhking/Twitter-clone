@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    --twitter-color: #1D9BF0;
+    --twitter-background: #e6ecf0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sidebarOption{
+    display: flex;
+    align-items: center;
+}
+.sidebarOption i, .fa-x-twitter{
+    padding: 20px;
+}
+.sidebarOption .material-symbols-outlined{
+    padding: 18px;
+}
+.sidebarOption:hover{
+    background-color: var(--twitter-background);
+    border-radius: 30px;
+    color: var(--twitter-color);
+    transition: color 1s ease-out;
+    width: 60px;
+}
+.sidebarOption.active{
+    color: var(--twitter-color);
+}
+.sidebar_tweet{
+    width: 30%;
+    background-color: #1D9BF0;
+    border: 0;
+    color: white;
+    font-weight: 900px;
+    font-size: 20px;
+    border-radius: 100px;
+    height: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.sidebar{
+    overflow-y: auto;
+    padding-left: 50px;
+    overflow-y: scroll;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+.sidebar{
+    border-right: 1px solid var(--twitter-background);
+    flex: 0.2;
+    min-width: 250px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.fa-x-twitter{
+    font-size: 30px;
+}
+.me{
+    flex: 0.5;
+    border-right: 1px solid var(--twitter-background);
+    /* min-width: 530px; */
+    max-width: 350px;
+    overflow-y: scroll;
+}
+.feed_header{
+    display: flex;
+    position: sticky;
+    /* margin-left: -70px; */
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    /* border: 1px solid var(--twitter-background); */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 200px;
+    padding-right: 200px;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 300px;
+    opacity: 1;
+    color: black;
+}
+.mess{
+    padding: 20px;
+}
+.feed_header h3{
+    color: black;
+    margin-left: 50px;
+    opacity: 2;
+    z-index: 5;
+}
+.for{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.for1{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.men{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.feed_header h2{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.feed_header{
+    position: fixed;
+    background-color: #ffffffe2;
+    padding-right: 274px;
+}
+.me::-webkit-scrollbar{
+    display: none;
+}
+.feed{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.feed_header  h3{
+    margin-left: -100px;
+}
+.ion{
+    display: flex;
+    justify-content: space-between;
+}
+.ion .fa-gear{
+    margin-left: 160px;
+    padding: 12px 15px;
+    border-radius: 100px;
+}
+.ion .fa-envelope{
+    margin-left: 5px;
+    padding: 12px 15px;
+    border-radius: 100px;
+}
+a:hover .fa-gear{
+    background-color: rgba(128,128,128,0.25);
+    transition: all 0.3s ease;
+}
+a:hover .fa-envelope{
+    background-color: rgba(128,128,128,0.25);
+    transition: all 0.3s ease;
+}
+.typing{
+    margin-left: 10px;
+}
+.Direct{
+    padding: 10px 10px;
+    padding-right: 150px;
+    border-radius: 100px;
+    border: 1px solid var(--twitter-background);
+    padding-left: 26px;
+}
+input:focus-within{
+    border: #1D9BF0;
+}
+.stress1{
+    font-size: 13px;
+    position: relative;
+    top: -29px;
+    margin-left: 5px;
+    opacity: 0.6;
+}
+.chat_name img{
+    height: 40px;
+    border-radius: 100px;
+    margin-left: 10px;
+}
+.chat_name{
+    display: flex;
+    background-color: RGB(247, 249, 249);
+    padding: 14px;
+}
+.chat_name span{
+    font-weight: 600;
+    margin-left: 10px;
+}
+.chat_name p{
+    font-size: 14px;
+    opacity: 0.5;
+}
+.chat_name i{
+    margin-left: 25px;
+    display: none;
+}
+.chat_name:hover{
+    background-color: rgba(128,128,128,0.1);
+    transition: all 0.2s ease-in-out;
+}
+.chat_name:hover i{
+    display: block;
+}
+.who_knows h6{
+    margin-top: -20px;
+    margin-left: 70px;
+}  
+.chatbot{
+    border-right: 1px solid var(--twitter-background);
+    flex: 0.5;
+}
+.chatbot header{
+    padding: 15px 20px;
+    display: flex;
+}
+.chatbot header img{
+    height: 30px;
+    border-radius: 100px;
+}
+.chat img{
+      height: 32px;
+      border-radius: 100px;
+     line-height: 32px;
+     text-align: center;
+    margin: 0 10px 7px 0;
+}
+.chatbox .incoming img{
+    line-height: 32px;
+    text-align: center;
+    margin: 0 10px 7px 0;
+    align-self: flex-end;
+ }
+.chatbot header h2{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.chatbot .chatbox{
+    height: 508px;
+    overflow-y: auto;
+    padding: 30px 20px 70px;
+}
+.chatbox .chat{
+     display: flex;
+}
+.chatbox .outgoing{
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.chatbox .chat p{
+      padding: 12px 16px;
+      color: black;
+      max-width: 75%;
+      font-size: 0.95rem;
+      border-radius: 10px;
+      background: #f2f2f2;
+}
+.chatbox .incoming p{
+    color: #000;
+    background: #f2f2f2;
+    border-radius: 10px;
+}
+.chatbox .outgoing p{
+    background-color: #1D9BF0;
+    color: #fff;
+}
+.chatbot .chat-input{
+    position: absolute;
+    bottom: 0;
+    width: 47.2%;
+    display: flex;
+    gap: 5px;
+    padding: 5px 20px;
+    background: #1d9cf00d;
+    border: 1px solid #ccc;
+}
+.chat-input{
+    display: flex;
+    justify-content: space-around;
+}
+.chat-input textarea{
+    height: 30px;
+    border-radius: 12px;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-size: 0.95rem;
+    background-color: #1d9cf00d;
+    resize: 0;
+    /* padding-right: 200px;
+    border-radius: 10px; */
+}
+.chat-input i{
+    color: #1D9BF0;
+}
+.chat-input .material-symbols-outlined{
+    color: #1D9BF0;
+    font-size: 20px;
+}
+.chat-input .send{
+    color: var(--twitter-color);
+    font-size: 1.35rem;
+    cursor: pointer;
+    align-self: flex-end;
+    height:  20px;
+    line-height: 20px;
+}
+
+@media(max-width:500px){
+    .sidebar{
+        display: none;
+    }
+    .me{
+        display: none;
+    }
+    .chatbot{
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        flex: 1;
+    }
+    .chatbot .chatbox{
+        height: 70%;
+        width: 100%;
+    }
+}
